@@ -7,8 +7,8 @@
     <title>Register</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,45 +16,74 @@
             margin: 0;
         }
         .register-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            position: relative;
+        }
+        .register-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            z-index: 0;
         }
         .register-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
+            margin: 0;
+            color: #333;
+            font-size: 28px;
+            position: relative;
+            z-index: 1;
         }
         .register-container input[type="text"],
         .register-container input[type="email"],
         .register-container input[type="password"] {
-            width: 100%;
-            padding: 10px;
+            width: calc(100% - 20px);
+            padding: 15px;
             margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
         }
         .register-container input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
+            width: calc(100% - 20px);
+            padding: 15px;
+            background-color: #ff7e5f;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
             color: white;
-            font-size: 16px;
+            font-size: 18px;
             cursor: pointer;
             margin-top: 10px;
+            position: relative;
+            z-index: 1;
+            transition: background-color 0.3s ease;
+        }
+        .register-container input[type="submit"]:hover {
+            background-color: #feb47b;
         }
         .error, .success {
             text-align: center;
-            margin-top: 10px;
+            margin-top: 15px;
+            position: relative;
+            z-index: 1;
         }
         .error {
-            color: red;
+            color: #d9534f;
         }
         .success {
-            color: green;
+            color: #5bc0de;
         }
     </style>
 </head>

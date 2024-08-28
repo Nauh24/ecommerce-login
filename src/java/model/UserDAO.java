@@ -38,6 +38,17 @@ public class UserDAO {
             return rowsUpdated > 0;
         }
     }
+    
+    // Phương thức cập nhật mật khẩu cho người dùng dựa trên email
+    public boolean updatePasswordByEmail(String email, String newPassword) throws SQLException {
+        String sql = "UPDATE users SET password = ? WHERE email = ?";
+        try (PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setString(1, newPassword);
+            statement.setString(2, email);
+            int rowsUpdated = statement.executeUpdate();
+            return rowsUpdated > 0;
+        }
+    }
 
     public User getUserByEmailOrPhone(String emailOrPhone) throws SQLException {
         String sql = "SELECT * FROM users WHERE email = ? OR phone = ?";

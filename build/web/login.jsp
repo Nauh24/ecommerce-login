@@ -6,63 +6,72 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <style>
-        /* Thêm một số CSS cơ bản để tạo giao diện đẹp mắt */
+        /* Thay đổi giao diện để trông hiện đại hơn */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
+            font-family: 'Roboto', sans-serif;
+            background-color: #e0e0e0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-image: linear-gradient(to right, #74ebd5, #ACB6E5);
         }
         .login-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
         }
         .login-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
+            margin: 0;
+            color: #333;
+            font-size: 24px;
         }
         .login-container input[type="text"],
         .login-container input[type="password"] {
-            width: 100%;
-            padding: 10px;
+            width: calc(100% - 20px);
+            padding: 15px;
             margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
         }
         .login-container input[type="submit"],
         .login-container input[type="button"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
+            width: calc(100% - 20px);
+            padding: 15px;
+            background-color: #007BFF;
             border: none;
-            border-radius: 4px;
+            border-radius: 5px;
             color: white;
-            font-size: 16px;
+            font-size: 18px;
             cursor: pointer;
             margin-top: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
         }
-        .login-container input[type="button"] {
-            background-color: #007BFF;
+        .login-container input[type="submit"]:hover,
+        .login-container input[type="button"]:hover {
+            background-color: #0056b3;
         }
         .login-container a {
             display: block;
-            text-align: center;
-            margin-top: 10px;
+            margin-top: 15px;
             color: #007BFF;
             text-decoration: none;
+            font-size: 16px;
         }
         .login-container a:hover {
             text-decoration: underline;
         }
         .error {
-            color: red;
-            text-align: center;
+            color: #d9534f;
+            margin-top: 15px;
         }
     </style>
 </head>

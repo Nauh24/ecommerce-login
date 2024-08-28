@@ -3,7 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/vanhu/Documents/NetBeansProjects/ECommerceProject/src/java/controller/ForgotPasswordServlet.java</file>
+            <file>file:/C:/Users/vanhu/Documents/NetBeansProjects/ECommerceLogin/src/java/controller/ForgotPasswordServlet.java</file>
+            <file>file:/C:/Users/vanhu/Documents/NetBeansProjects/ECommerceLogin/src/java/controller/NewPassword.java</file>
+            <file>file:/C:/Users/vanhu/Documents/NetBeansProjects/ECommerceLogin/web/enterOTP.jsp</file>
+            <file>file:/C:/Users/vanhu/Documents/NetBeansProjects/ECommerceLogin/src/java/controller/ValidateOtp.java</file>
+            <file>file:/C:/Users/vanhu/Documents/NetBeansProjects/ECommerceLogin/src/java/controller/ChangePasswordServlet.java</file>
+            <file>file:/C:/Users/vanhu/Documents/NetBeansProjects/ECommerceLogin/src/java/controller/LogoutServlet.java</file>
+            <file>file:/C:/Users/vanhu/Documents/NetBeansProjects/ECommerceLogin/web/forgotPassword.jsp</file>
+            <file>file:/C:/Users/vanhu/Documents/NetBeansProjects/ECommerceLogin/src/java/model/UserDAO.java</file>
+            <file>file:/C:/Users/vanhu/Documents/NetBeansProjects/ECommerceLogin/web/newPassword.jsp</file>
         </group>
     </open-files>
 </project-private>
