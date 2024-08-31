@@ -4,18 +4,28 @@
  */
 package controller;
 
-import javax.servlet.*;
-import javax.servlet.http.*;
 import java.io.IOException;
-import java.sql.*;
+import java.io.PrintWriter;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.regex.*;
-import javax.servlet.annotation.WebServlet;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import model.Database;
 import model.User;
 import model.UserDAO;
 
+/**
+ *
+ * @author Nauh
+ */
 @WebServlet("/changePassword")
 public class ChangePasswordServlet extends HttpServlet {
     private UserDAO userDAO;
