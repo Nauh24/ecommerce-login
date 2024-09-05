@@ -3,17 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/ECommerceWeb/web/index.html</file>
-            <file>file:/D:/ECommerceWeb/src/java/controller/ForgotPasswordServlet.java</file>
-            <file>file:/D:/ECommerceWeb/src/java/model/User.java</file>
-            <file>file:/D:/ECommerceWeb/src/java/controller/LogoutServlet.java</file>
-            <file>file:/D:/ECommerceWeb/src/java/model/UserDAO.java</file>
-            <file>file:/D:/ECommerceWeb/src/java/controller/NewPassword.java</file>
-            <file>file:/D:/ECommerceWeb/src/java/model/Database.java</file>
-            <file>file:/D:/ECommerceWeb/src/java/controller/RegisterServlet.java</file>
-            <file>file:/D:/ECommerceWeb/src/java/controller/LoginServlet.java</file>
-            <file>file:/D:/ECommerceWeb/src/java/controller/ChangePasswordServlet.java</file>
-            <file>file:/D:/ECommerceWeb/src/java/controller/ValidateOtp.java</file>
+            <file>file:/D:/ecommerce-login/web/login-fail.jsp</file>
+            <file>file:/D:/ecommerce-login/web/newPassword.jsp</file>
+            <file>file:/D:/ecommerce-login/src/java/controller/ForgotPasswordServlet.java</file>
+            <file>file:/D:/ecommerce-login/src/java/controller/LoginServlet.java</file>
+            <file>file:/D:/ecommerce-login/web/login.jsp</file>
+            <file>file:/D:/ecommerce-login/web/changePassword.jsp</file>
+            <file>file:/D:/ecommerce-login/web/forgotPassword.jsp</file>
+            <file>file:/D:/ecommerce-login/web/enterOTP.jsp</file>
         </group>
     </open-files>
 </project-private>

@@ -67,7 +67,7 @@ public class ChangePasswordServlet extends HttpServlet {
     }
 
     private boolean validatePassword(String password) {
-        Pattern pattern = Pattern.compile("^(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$&*]).{8,}$");
+        Pattern pattern = Pattern.compile("^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*()~`\\-_=+/?\\\\|<>,.;:'\\[{\\]}]).{8,}$");
         Matcher matcher = pattern.matcher(password);
         return matcher.matches();
     }

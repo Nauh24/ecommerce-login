@@ -80,7 +80,7 @@ public class RegisterServlet extends HttpServlet {
 // Phương thức kiểm tra mật khẩu có hợp lệ hay không
     private boolean isValidPassword(String password) {
         // Mật khẩu phải có ít nhất 8 ký tự, một chữ số, một chữ cái viết hoa và một ký tự đặc biệt
-        String passwordPattern = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$&*]).{8,}$";
+       String passwordPattern = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*()~`\\-_=+/?\\\\|<>,.;:'\\[\\]{}]).{8,}$";
         return password.matches(passwordPattern);
     }
 
