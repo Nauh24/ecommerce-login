@@ -33,7 +33,7 @@
         }
         .login-container input[type="text"],
         .login-container input[type="password"] {
-            width: calc(100% - 20px);
+            width: 100%;
             padding: 15px;
             margin: 10px 0;
             border: 1px solid #ddd;
@@ -41,9 +41,25 @@
             font-size: 16px;
             box-sizing: border-box;
         }
+        .login-container .password-container {
+            position: relative;
+            width: 100%;
+        }
+        .login-container .password-container input[type="password"] {
+            width: 100%;
+            padding-right: 40px; /* Để chừa không gian cho icon nhưng không ảnh hưởng đến kích thước trường nhập */
+        }
+        .login-container .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 18px;
+        }
         .login-container input[type="submit"],
         .login-container input[type="button"] {
-            width: calc(100% - 20px);
+            width: 100%;
             padding: 15px;
             background-color: #007BFF;
             border: none;
@@ -82,7 +98,12 @@
 
     <form action="login" method="post">
         <input type="text" name="username" placeholder="Enter Username" required>
-        <input type="password" name="password" placeholder="Enter Password" required>
+
+        <div class="password-container">
+            <input type="password" name="password" placeholder="Enter Password" id="password" required>
+            <span class="toggle-password" id="togglePassword">👁️</span>
+        </div>
+
         <input type="submit" value="Login">
     </form>
 
@@ -93,6 +114,17 @@
         <p class="error">${error}</p>
     </c:if>
 </div>
+
+<script>
+    const passwordField = document.getElementById('password');
+    const togglePasswordIcon = document.getElementById('togglePassword');
+
+    togglePasswordIcon.addEventListener('click', function() {
+        const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordField.setAttribute('type', type);
+        this.textContent = type === 'password' ? '👁️' : '🙈';
+    });
+</script>
 
 </body>
 </html>
